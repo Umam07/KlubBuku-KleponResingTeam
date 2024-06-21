@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "262855512755",
+    "project_id": "klubbuku-kleponresingteam",
+    "storage_bucket": "klubbuku-kleponresingteam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262855512755:android:0dd0ed79eb4ab7de7856c6",
+        "android_client_info": {
+          "package_name": "com.example.klubbuku_kleponresingteam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBth4EWpdOCm8TLv3Gg_82HcOWJft1Q3ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
