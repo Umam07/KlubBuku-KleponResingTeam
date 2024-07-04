@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UploadReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="@drawable/light_background">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Data"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/uploadimg"
+            android:src="@drawable/uploadimg"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadjudul"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Enter the topic"
+            android:gravity="start|center_vertical"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadpenulis"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Enter the author"
+            android:gravity="start|center_vertical"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadgenre"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Enter the genre"
+            android:gravity="start|center_vertical"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadreviewmu"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Enter the review"
+            android:gravity="start|center_vertical"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="save"
+            android:id="@+id/savebutton"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+  </ScrollView>

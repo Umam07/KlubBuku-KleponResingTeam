@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GetStartedActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        style="@android:style/Widget.Button"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_getstarted" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini dibuat oleh 4 orang \nmahasiswa yang hitam dan mewing."
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetStarted"
+        app:layout_constraintStart_toStartOf="@id/buttonGetStarted"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/men"
+        android:layout_marginBottom="24dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="@id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to ReadWave"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@id/imageView10"
+        app:layout_constraintEnd_toEndOf="@id/imageView10"
+        app:layout_constraintStart_toStartOf="@id/imageView10"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
