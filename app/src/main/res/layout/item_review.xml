@@ -5,37 +5,115 @@
     android:orientation="vertical"
     android:padding="8dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Name"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 jam"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:text="Judul"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genre"
+        android:text="Genre Buku"
+        android:textSize="15sp"
+        android:paddingBottom="8dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the post content."
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingBottom="8dp" />
+
+
+
     <ImageView
-        android:id="@+id/itemImage"
+        android:id="@+id/post_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:id="@+id/itemJudul"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Judul"
-        android:textStyle="bold"
-        android:paddingTop="8dp" />
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
 
-    <TextView
-        android:id="@+id/itemPenulis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Penulis" />
+        <TextView
+            android:id="@+id/likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,5rb"
+            android:drawablePadding="4dp"
+            android:textSize="14sp"
+            android:background="@drawable/like"/>
 
-    <TextView
-        android:id="@+id/itemGenre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Genre" />
+        <TextView
+            android:id="@+id/comments_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="122"
 
-    <TextView
-        android:id="@+id/itemReview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Review" />
+            android:drawablePadding="4dp"
+            android:layout_marginStart="16dp"
+            android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/shares_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18rb"
 
+            android:drawablePadding="4dp"
+            android:layout_marginStart="16dp"
+            android:textSize="14sp" />
+    </LinearLayout>
 </LinearLayout>

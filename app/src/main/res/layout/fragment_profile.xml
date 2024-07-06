@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.ProfileActivity">
+    tools:context=".Fragment.ProfileFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:background="@drawable/dark_background">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/fotoProfile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
@@ -33,24 +33,29 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
+
+                <EditText
                     android:id="@+id/namaUser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text=""
+                    android:hint="Enter username"
+                    android:textColorHint="@color/white"
+                    android:gravity="center"
                     android:textColor="@android:color/white"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@id/imageView3"
-                    app:layout_constraintStart_toStartOf="@id/imageView3"
-                    app:layout_constraintTop_toBottomOf="@id/imageView3" />
+                    app:layout_constraintEnd_toEndOf="@id/fotoProfile"
+                    app:layout_constraintStart_toStartOf="@id/fotoProfile"
+                    app:layout_constraintTop_toBottomOf="@id/fotoProfile" />
 
-                <TextView
-                    android:id="@+id/pekerjaan"
+                <Button
+                    android:id="@+id/saveUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:layout_marginTop="15dp"
+                    android:text="Save"
+                    android:background="@color/black"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@id/namaUser"

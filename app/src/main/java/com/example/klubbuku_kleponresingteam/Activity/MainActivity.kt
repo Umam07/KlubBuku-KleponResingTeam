@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import com.example.klubbuku_kleponresingteam.Fragment.HomeFragment
 import com.example.klubbuku_kleponresingteam.Fragment.SearchFragment
 import com.example.klubbuku_kleponresingteam.Fragment.DiscoverFragment
@@ -30,6 +31,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, UploadReviewActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
 

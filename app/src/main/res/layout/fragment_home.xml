@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.HomeFragment">
 
-    <LinearLayout
+    <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -133,6 +133,6 @@
                 android:orientation="vertical" />
 
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

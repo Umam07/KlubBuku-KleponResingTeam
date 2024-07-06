@@ -1,5 +1,6 @@
 package com.example.klubbuku_kleponresingteam.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.klubbuku_kleponresingteam.Activity.CobaActivity
 import com.example.klubbuku_kleponresingteam.Adapter.BukuAdapter
 import com.example.klubbuku_kleponresingteam.Domain.BukuDomain
 import com.example.klubbuku_kleponresingteam.R
@@ -47,7 +49,8 @@ class DiscoverFragment : Fragment(), BukuAdapter.OnItemClickListener {
     override fun onItemClick(position: Int) {
         // Lakukan navigasi ke FantasiFragment jika item pertama di klik
         if (position == 0) {
-            //findNavController().navigate(R.id.action_discoverFragment_to_fantasiFragment)
+            val intent = Intent(activity, CobaActivity::class.java)
+            startActivity(intent)
         }
     }
 }
